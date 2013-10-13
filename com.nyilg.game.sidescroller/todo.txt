@@ -1,0 +1,33 @@
+-load a png as background picture, use image loader
+-create a generic Background implementation (color, pic as bg)
+-draw some static primitives in front of the background
+-make primitives move, implement double buffering facility
+-bind frame refresh to a key press event
+-implement continue, pause, step functions
+-create a generic start menu
+-implement some basic collision detection
+-load sounds as resources, bind them to game events
+
+Resources:
+all resources must have 
+- a unique resource id
+- state: UNLOADED, LOADED, MISSING
+- type (IMAGE,SOUND,MUSIC) 
+
+ResourceLoader is reading an input file describing resources to load.
+At first, this is a simple property file with id=path format.
+ResourceLoader is loading a resource on demand. Later this will be adjustable
+to: 
+- load a group of resources at start
+- load resources on demand
+- load a predefined group of resources on demand
+
+Background:
+- background with simple color
+- background with an image
+	- centered
+	- tiled
+	- stretched
+	
+
+ 
